@@ -1,0 +1,243 @@
+/*
+ * Header and main Jenkins theme
+ */
+#header {
+    background-color: #ddd;
+}
+
+#header .login {
+    display: none;
+}
+
+#header .logo #jenkins-name-icon, #header .searchbox {
+    display: none;
+}
+
+#breadcrumbBar {
+    display: none;
+}
+
+/*
+ * Main build pipeline content
+ */
+#build-pipeline-plugin-content {
+    font-family: Arial;
+    background-color: #ddd;
+    margin-top: -40px;
+}
+
+/*
+ * Build pipeline title
+ */
+#build-pipeline-plugin-content h1:nth-of-type(1) {
+    clear: both;
+    margin: 5px 0 5px 0;
+    font-family: Arial;
+    color: #333;
+}
+
+/*
+ * Build pipeline icon bar for building, config, etc
+ */
+#icon-bar {
+    clear: both;
+    display: flex;
+    margin-bottom: -86px;
+    margin-left: -8px;
+}
+
+#icon-bar div.icon-container {
+    z-index: 99;
+}
+
+#icon-bar div.icon-container:nth-of-type(2),
+#icon-bar div.icon-container:nth-of-type(4),
+#icon-bar div.icon-container:nth-of-type(5),
+#icon-bar div.icon-container:nth-of-type(6),
+#icon-bar div.icon-container:nth-of-type(7) {
+    display: none;
+}
+
+#icon-bar div.icon-container:nth-of-type(1) {
+    margin-top: 4px;
+}
+
+#icon-bar div.icon-container:nth-of-type(1) span img {
+    background: url(../images/ic_play_circle_outline_black.svg) no-repeat;
+    width: 0;
+    height: 0;
+    padding: 24px 0 0 24px;
+    background-size: 24px;
+}
+
+#icon-bar div.icon-container:nth-of-type(3) a img {
+    background: url(../images/ic_settings_black.svg) no-repeat;
+    width: 0;
+    height: 0;
+    padding: 24px 0 0 24px;
+    background-size: 24px;
+}
+
+/*
+ * Pipeline and Build Cards
+ */
+table.pipelines {
+    table-layout: fixed;
+}
+
+div.pipeline-info {
+    margin-right: 20px;
+}
+
+div.pipeline-wrapper {
+    margin: 18px 0 18px 0;
+    border: 2px solid #333;
+    border-radius: 15px;
+    background-color: cornflowerblue;
+}
+
+div.pipeline-wrapper div.pipeline {
+    padding: 0;
+}
+
+div.pipeline-wrapper.header {
+    border: none;
+    margin-bottom: -24px;
+}
+
+div.pipeline-wrapper.header .build-info {
+    display: none;
+}
+
+.build-card .build-actions {
+    margin-bottom: 5px;
+}
+
+.build-card .build-info ul li {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0 0 0 23px !important;
+}
+
+.build-card {
+    box-shadow: none;
+    border: 2px solid #444;
+    border-radius: 10px;
+    color: black;
+}
+
+.build-card .header {
+    text-align: center;
+    padding: 6px 6px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #333;
+    border-radius: 7px;
+}
+
+.revision {
+    box-shadow: none;
+    border: 2px solid #444;
+    border-radius: 10px;
+}
+
+.revision .title {
+    text-align: center;
+    padding: 6px 6px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #333;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+
+.revision div:nth-of-type(2) {
+    color: #eee
+}
+
+/*
+ * Build card icons for console, retry, etc
+ */
+span.next img {
+    background: url(../images/arrow_forward.svg) no-repeat;
+    width: 0;
+    height: 0;
+    padding: 18px 0 0 18px;
+}
+
+li.build-time {
+    background: url(../images/ic_assignment_black.svg) no-repeat !important;
+}
+
+li.build-duration {
+    background: url(../images/ic_history_black.svg) no-repeat !important;
+}
+
+li.build-user {
+    background: url(../images/ic_people_black.svg) no-repeat !important;
+}
+
+span img[title='re-run'], span img[title='retry'] {
+    background: url(../images/ic_refresh_black.svg) no-repeat;
+    width: 0;
+    height: 0;
+    padding: 18px 0 0 18px;
+}
+
+span img[title='console'] {
+    background: url(../images/console.svg) no-repeat;
+    width: 0;
+    height: 0;
+    padding: 24px 0 0 24px;
+}
+
+span img[title='trigger'] {
+    background: url(../images/ic_play_circle_outline_black.svg) no-repeat;
+    width: 0;
+    height: 0;
+    padding: 18px 0 0 18px;
+}
+
+/*
+ * Lightbox console overlay
+ */
+ #fancybox-outer {
+     border-top-left-radius: 21px;
+     border-bottom-left-radius: 21px;
+ }
+
+ #fancybox-content {
+     border-radius: 21px;
+     border: 4px solid #333 !important;
+ }
+
+ #fancybox-outer .fancybox-bg {
+     display: none;
+ }
+
+/*
+ * Cursor
+ */
+.pointer {
+    cursor: pointer;
+}
+
+.pointer:hover {
+    outline: 0;
+    text-decoration: underline;
+}
+
+/*
+ * Build card status types
+ */
+.SUCCESS {
+    background-color: limegreen;
+}
+
+.FAILURE {
+    background-color: orangered;
+}
+
+.PENDING, .MANUAL {
+    background-color: #aaa;
+}
