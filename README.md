@@ -9,3 +9,6 @@ To use the theme, you can either:
 
 ### Mentions
 The images are used from the [Jenkins Neo Theme](https://github.com/aarjithn/jenkins-neo-theme).
+
+### Screens
+![screen capture](https://raw.githubusercontent.com/Badgerati/Build-Pipeline-Theme/master/screens/capture.png "screen capture")
